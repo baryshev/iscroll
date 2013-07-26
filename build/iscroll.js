@@ -381,6 +381,7 @@ IScroll.prototype = {
 		if ( this.options.useTransition && this.isInTransition ) {
 			pos = this.getComputedPosition();
 
+			this._transitionTime(0.001);
 			this._translate(Math.round(pos.x), Math.round(pos.y));
 			this.isInTransition = false;
 		}
@@ -1285,6 +1286,7 @@ IScroll.prototype = {
 		if ( this.options.useTransition && this.isInTransition ) {
 			pos = this.getComputedPosition();
 
+			this._transitionTime(0.001);
 			this._translate(Math.round(pos.x), Math.round(pos.y));
 			this.isInTransition = false;
 		}
